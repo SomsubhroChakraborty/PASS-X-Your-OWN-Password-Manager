@@ -4,71 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>password maneger</title>
+    <title>password manager</title>
     <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit:wght@100&family=Open+Sans:wght@300&family=Raleway:ital,wght@1,100&family=Rubik+Pixels&display=swap');
-                    html{
-                      background-color:black;
-                      color:#860ae1;
-                    }
-                    nav {
-                      font-family: 'Bruno Ace', cursive;
-                      font-size: 20px;
-                      display: flex;
-                      color: #860ae1;
-                      background-color: #000000;
-                      padding: 10px;
-                      text-align: center;
-                      justify-content: center;
-                      border-radius: 40px;
-                      border: 3px solid #860ae1;
-
-                      /* table {
-                        width: 80%;
-                        margin: 20px auto;
-                        border-collapse: collapse;
-                      } */
-                      table,
-                      th,
-                      td {
-                        border: 1px solid #ddd;
-                        display:flex;
-                      }
-                      th,
-                      td {
-                        display: flex;
-                        padding: 8px;
-                        text-align: left;
-                      }
-                      th {
-                        background-color: #f2f2f2;
-                      }
-                    }
-                    .container {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              font-family: 'Bruno Ace', cursive;
-              box-shadow: 0 0 10px #860ae1;
-              margin-top:20px;
-              text-shadow: 2px 2px 4px #860ae1; /* You can adjust the values as needed */
-            }
-            button{
-              font-family:"Bruno Ace", cursive;
-              background-color:black;
-              color:#860ae1;
-              border:2px solid #860ae1;
-            }
-
-      .content{
-        display :flex;
-        flex-direction :coloumn;
-        flex-wrap:wrap;
-        flex-direction:column;
+      @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit:wght@100&family=Open+Sans:wght@300&family=Raleway:ital,wght@1,100&family=Rubik+Pixels&display=swap');
+      html {
+        background-color: black;
+        color: #860ae1;
       }
-
-                  }
+      nav {
+        font-family: 'Bruno Ace', cursive;
+        font-size: 20px;
+        display: flex;
+        color: #860ae1;
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 40px;
+        border: 3px solid #860ae1;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Bruno Ace', cursive;
+        box-shadow: 0 0 10px #860ae1;
+        margin-top: 20px;
+        text-shadow: 2px 2px 4px #860ae1;
+        max-width: 800px; /* Added a max-width to limit container width */
+        padding: 20px; /* Added padding for spacing */
+      }
+      button {
+        font-family: 'Bruno Ace', cursive;
+        background-color: black;
+        color: #860ae1;
+        border: 2px solid #860ae1;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        width: 100%; /* Make the content div full width */
+      }
+      table,
+      th,
+      td {
+        width: 100%; /* Make the table take the full width of its container */
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      input[type='text'],
+      input[type='password'] {
+        width: 100%; /* Make input fields take the full width */
+        padding: 8px;
+        margin: 5px 0;
+      }
+      ul#list {
+        list-style: none;
+        padding: 0;
+      }
+      /* Media query for responsiveness */
+      @media screen and (max-width: 600px) {
+        nav {
+          font-size: 16px; /* Reduce font size for small screens */
+        }
+        .container {
+          padding: 10px; /* Adjust padding for small screens */
+        }
+        table,
+        th,
+        td {
+          font-size: 14px; /* Reduce font size for small screens */
+        }
+        input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+      }
     </style>
   </head>
   <body>
