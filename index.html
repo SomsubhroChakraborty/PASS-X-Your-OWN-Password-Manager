@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password maneger</title>
+    <style>
+              @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit:wght@100&family=Open+Sans:wght@300&family=Raleway:ital,wght@1,100&family=Rubik+Pixels&display=swap');
+              html{
+                background-color:black;
+                color:#860ae1;
+              }
+              nav {
+                font-family: 'Bruno Ace', cursive;
+                font-size: 20px;
+                display: flex;
+                color: #860ae1;
+                background-color: #000000;
+                padding: 10px;
+                text-align: center;
+                justify-content: center;
+                border-radius: 40px;
+                border: 3px solid #860ae1;
+
+                /* table {
+                  width: 80%;
+                  margin: 20px auto;
+                  border-collapse: collapse;
+                } */
+                table,
+                th,
+                td {
+                  border: 1px solid #ddd;
+                }
+                th,
+                td {
+                  display: flex;
+                  padding: 8px;
+                  text-align: left;
+                }
+                th {
+                  background-color: #f2f2f2;
+                }
+              }
+              .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Bruno Ace', cursive;
+        box-shadow: 0 0 10px #860ae1;
+        margin-top:20px;
+        text-shadow: 2px 2px 4px #860ae1; /* You can adjust the values as needed */
+      }
+      button{
+        font-family:"Bruno Ace", cursive;
+        background-color:black;
+        color:#860ae1;
+        border:2px solid #860ae1;
+      }
+
+
+
+            }
+    </style>
+  </head>
+  <body>
+    <nav>PASS-X : Your OWN Password Manager</nav>
+    <div class="container">
+      <h1>password maneger</h1>
+      <p>
+        Welcome to your trusted Password Manager App! We're here to help you
+        keep your digital life secure, organized, and hassle-free.
+      </p>
+      <h2>YOUR PASSWORDS:</h2>
+      <table>
+        <tr>
+          <th>Website Name</th>
+          <th>Username</th>
+          <th>Password</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="websiteName" placeholder="Website Name" />
+          </td>
+          <td><input type="text" id="username" placeholder="Username" /></td>
+          <td>
+            <input type="password" id="password" placeholder="Password" />
+          </td>
+        </tr>
+      </table>
+      <button id="add" type="submit">Add Entry</button>
+      <h2>Your Saved Passwords</h2>
+      <ul id="list"></ul>
+    </div>
+  </body>
+</html>
