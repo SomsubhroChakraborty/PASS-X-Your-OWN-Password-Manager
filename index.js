@@ -11,8 +11,17 @@ addButton.addEventListener('click', (event) => {
   const username = usernameInput.value;
   const password = passwordInput.value;
 
-  if (websiteName.trim() === '' || username.trim() === '' || password.trim() === '') {
+  if (
+    websiteName.trim() === '' ||
+    username.trim() === '' ||
+    password.trim() === ''
+  ) {
     alert('Please fill in all fields.');
+    return;
+  }
+
+  if (password.length < 8) {
+    alert('Password must be at least 8 characters long.');
     return;
   }
 
